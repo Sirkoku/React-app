@@ -1,9 +1,18 @@
-import React from 'react'
+import React from 'react';
+import CartWidget from './CartWidget';
 
-function NavBar() {
+const NavBar = () => {
   return (
-    <div>NavBar</div>
-  )
-}
+    <nav style={{ display: 'flex', justifyContent: 'space-between', padding: '1rem', backgroundColor: 'black' }}>
+      <h1>Mi Tienda</h1>
+      <ul style={{ display: 'flex', listStyle: 'none', gap: '1rem' }}>
+        <li><a href="#">Remeras</a></li>
+        <li><a href="#">Buzos</a></li>
+        <li><a href="#">Camperas</a></li>
+      </ul>
+      <CartWidget />
+    </nav>
+  );
+};
 
-export default NavBar
+export default NavBar;
