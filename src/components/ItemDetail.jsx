@@ -10,14 +10,30 @@ const ItemDetail = ({ producto }) => {
     
   };
 
-  return (
-    <div style={{ border: "1px solid #ccc", padding: "1rem", margin: "1rem" }}>
-      <img src={producto.imagen} alt={producto.nombre} style={{ width: "150px" }} />
-      <h2>{producto.nombre}</h2>
-      <p>Precio: ${producto.precio}</p>
-      <p>Categoría: {producto.categoria}</p>
-      <ItemCount stock={25} initial={1} onAdd={handleAdd} />
-    </div>
+  return (   
+    <div className="card mb-3" style={{ maxWidth: "540px" }}>
+      <div className="row g-0">
+        <div className="col-md-4">
+          <img
+            src={producto.imagen}
+            className="img-fluid rounded-start"
+            alt={producto.nombre}
+          />
+        </div>
+        <div className="col-md-8">
+          <div className="card-body">
+            <h5 className="card-title">{producto.nombre}</h5>
+            <p className="card-text">Precio: ${producto.precio}</p>
+            <p className="card-text">
+              <small className="text-body-secondary">
+                Categoría: {producto.categoria}
+              </small>
+            </p>
+            <ItemCount stock={producto.stock} initial={1} onAdd={handleAdd} />
+          </div>
+        </div>
+      </div>
+    </div> 
   );
 };
 

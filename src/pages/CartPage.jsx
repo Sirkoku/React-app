@@ -1,8 +1,15 @@
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
+import { useNavigate } from "react-router-dom";
 
 const CartPage = () => {
 const { cart, removeFromCart, clearCart, totalPrice } = useContext(CartContext);
+const navigate = useNavigate(); 
+
+const handleCheckout = () => {
+    
+    navigate("/checkout"); // Redirige a CheckoutForm
+};
 
 if (cart.length === 0) {
     return <h2>El carrito está vacío 🛒</h2>;
@@ -25,7 +32,7 @@ return (
 
     <h2>Total: ${totalPrice}</h2>
     <button onClick={clearCart}>Vaciar carrito</button>
-    <button onClick={() => alert("Compra finalizada 🎉")}>Finalizar compra</button>
+      <button onClick={handleCheckout}>Finalizar compra</button> {/* ✅ Ahora funciona */}
     </div>
 );
 };

@@ -6,6 +6,7 @@ import ItemDetailContainer from "./components/ItemDetailContainer";
 import NotFound from "./pages/NotFound";
 import { CartProvider } from "./context/CartContext";
 import CartPage from "./pages/CartPage";
+import CheckoutForm from "./components/CheckoutForm";
 
 function App() {
   return (
@@ -14,17 +15,21 @@ function App() {
         <NavBar />
 
         <Routes>
-          {/* Home: todos los productos */}
+          {/* Home*/}
           <Route path="/" element={<ItemListContainer greeting="Bienvenido a la tienda" />} />
 
           {/* Filtrar por categoría */}
           <Route path="/categoria/:categoriaId" element={<ItemListContainer />} />
 
           {/* Detalle de un producto */}
-          <Route path="/detalle/:id" element={<ItemDetailContainer />} />
+          <Route path="/detail/:id" element={<ItemDetailContainer />} />
 
           {/* Carrito */}
           <Route path="/cart" element={<CartPage />} />
+
+          {/* Checkout Formulario*/}
+          <Route path="/checkout" element={<CheckoutForm />} />
+
 
           {/* Ruta 404 */}
           <Route path="*" element={<NotFound />} />

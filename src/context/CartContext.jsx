@@ -8,16 +8,16 @@ const [cart, setCart] = useState([]);
 const addToCart = (producto, cantidad) => {
     const existing = cart.find((item) => item.id === producto.id);
     if (existing) {
-    setCart(
+        setCart(
         cart.map((item) =>
-        item.id === producto.id
+            item.id === producto.id 
         ? { ...item, cantidad: item.cantidad + cantidad } 
-        : item
-        )
-    );
-    } else {
-    setCart([...cart, { ...producto, cantidad }]);
-    }
+        : item 
+    ) 
+); 
+} else { 
+    setCart([...cart, { ...producto, cantidad }]); 
+} 
 };
 
 const removeFromCart = (id) => {

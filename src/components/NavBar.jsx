@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-// Lista de categorías que tenemos en products.js
+
 const categorias = ["remeras", "pantalones", "buzos", "camperas"];
 
 const NavBar = () => {
   return (
-    <nav style={{ padding: "1rem", backgroundColor: "#ddd" }}>
+    <nav style={{ padding: "1rem", backgroundColor: "#05f8bfff" }}>
       <ul style={{ display: "flex", gap: "1rem", listStyle: "none" }}>
         {/* Home */}
         <li>

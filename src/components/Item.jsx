@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Link } from "react-router-dom";
 
 const Item = ({ producto }) => {
@@ -8,7 +8,7 @@ const Item = ({ producto }) => {
       <h3>Nombre: {producto.nombre}</h3>
       <p>Precio: ${producto.precio}</p>
       <p>Categoria:{producto.categoria} </p>
-      <Link to={`/detalle/${producto.id}`}>Ver detalle</Link>
+      <Link to={`/detail/${producto.id}`}>Ver detalle</Link>
     </div>
   );
 };

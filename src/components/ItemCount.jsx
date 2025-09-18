@@ -2,6 +2,7 @@ import { useState } from "react";
 
 const ItemCount = ({ stock, initial = 1, onAdd }) => {
 const [count, setCount] = useState(initial);
+const [agregado, setAgregado] = useState(false);
 
 const Agregar = () => {
     if (count < stock) {
@@ -15,6 +16,15 @@ const Quitar = () => {
     }
 };
 
+const handleAdd = () => {
+    onAdd(count);
+    setAgregado(true);
+};
+
+if (agregado) {
+    return <p>Producto agregado al carrito ✅</p>;
+}
+
 return (
     <div style={{ margin: "1rem" }}>
     <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
@@ -22,10 +32,7 @@ return (
         <span>{count}</span>
         <button onClick={Agregar}>+</button>
     </div>
-    <button 
-        onClick={() => onAdd(count)} 
-        style={{ marginTop: "0.5rem" }}
-    >
+    <button onClick={handleAdd} style={{ marginTop: "0.5rem" }}>
         Agregar al carrito
     </button>
     </div>

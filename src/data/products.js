@@ -6,7 +6,7 @@ const productos = [
       descripcion: "Remera 100% algodon manga corta",
       categoria: "Remeras",
       stock: 25,
-      imagen: "/src/assets/Remera-Aki-ChainsawMan.PNG",
+      imagen: "/assets/Remera-Aki-ChainsawMan.PNG",
     },
   { id: 2,
     nombre: "Pantalón Berserk",
@@ -14,7 +14,7 @@ const productos = [
     descripcion:"Pantalon Jean color negro",
     categoria: "Pantalones",
     stock: 25,
-    imagen:"/src/assets/Pantalon-Berserk.PNG"
+    imagen:"/assets/Pantalon-Berserk.PNG"
     },
     {
       id:3,
@@ -23,7 +23,7 @@ const productos = [
       descripcion: "Buzo %100 algodon estampado",
       categoria: "Buzos",
       stock: 25,
-      imagen: "/src/assets/Buzo-Denji-Chainsaw.PNG",
+      imagen: "/assets/Buzo-Denji-Chainsaw.PNG",
     },
     {
       id:4,
@@ -32,7 +32,7 @@ const productos = [
       descripcion:"Campera corderito",
       categoria: "Camperas",
       stock: 25,
-      imagen:"/src/assets/Campera-CapsuleCorp.PNG"
+      imagen:"/assets/Campera-CapsuleCorp.PNG"
     },
     {
       id:5,
@@ -41,7 +41,7 @@ const productos = [
       descripcion:"Buzo 100% algodon",
       categoria:"Buzos",
       stock:25,
-      imagen:"/src/assets/Buzo-Eva01.PNG"
+      imagen:"/assets/Buzo-Eva01.PNG"
     },
     {
       id:6,
@@ -50,7 +50,7 @@ const productos = [
       descripcion:"Buzo con capucha ",
       categoria: "Buzos",
       stock: 25,
-      imagen:"/src/assets/Buzo-Gojo.PNG"
+      imagen:"/assets/Buzo-Gojo.PNG"
     },
     {
       id:7,
@@ -59,7 +59,7 @@ const productos = [
       descripcion:"Buzo con capucha",
       categoria: "Buzos",
       Stock:25,
-      imagen: "/src/assets/Buzo-KidBuu.PNG"
+      imagen: "/assets/Buzo-KidBuu.PNG"
     },
     {
       id:8,
@@ -68,7 +68,7 @@ const productos = [
       descripcion:"Buzo 100% algodon con capucha",
       categoria: "Buzos",
       stock:25,
-      imagen: "/src/assets/Buzo-Kimetsu-No-Yaiba.PNG"
+      imagen: "/assets/Buzo-Kimetsu-no-Yaiba.PNG"
     }
 ];
 
